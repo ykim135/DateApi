@@ -34,40 +34,40 @@ func TestDateService(t *testing.T) {
 	firstMondayDec := GetFirstMonday(12)
 
 	if firstMondayJan != expectedOutputJan {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondayJan, expectedOutputJan)
 	}
 	if firstMondayFeb != expectedOutputFeb {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondayFeb, expectedOutputFeb)
 	}
 	if firstMondayMar != expectedOutputMar {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondayMar, expectedOutputMar)
 	}
 	if firstMondayApr != expectedOutputApr {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondayApr, expectedOutputApr)
 	}
 	if firstMondayMay != expectedOutputMay {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondayMay, expectedOutputMay)
 	}
 	if firstMondayJun != expectedOutputJun {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondayJun, expectedOutputJun)
 	}
 	if firstMondayJul != expectedOutputJul {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondayJul, expectedOutputJul)
 	}
 	if firstMondayAug != expectedOutputAug {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondayAug, expectedOutputAug)
 	}
 	if firstMondaySep != expectedOutputSep {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondaySep, expectedOutputSep)
 	}
 	if firstMondayOct != expectedOutputOct {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondayOct, expectedOutputOct)
 	}
 	if firstMondayNov != expectedOutputNov {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondayNov, expectedOutputNov)
 	}
 	if firstMondayDec != expectedOutputDec {
-		t.Errorf("wrong")
+		t.Errorf("%v is wrong! Should be %v.", firstMondayDec, expectedOutputDec)
 	}
 }
 
@@ -93,6 +93,6 @@ func TestGetAllFirstMonday(t *testing.T) {
 	output := GetAllFirstMonday(allFirstMonday, month)
 
 	if !reflect.DeepEqual(output, expectedOutput) {
-		t.Errorf("wrong")
+		t.Errorf("get all monday wrong! Got %v, should be %v", output, expectedOutput)
 	}
 }
